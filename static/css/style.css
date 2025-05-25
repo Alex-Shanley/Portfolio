@@ -200,7 +200,7 @@
 
 .skillbox {
     position: relative;
-    background-color: #D2F153;
+    background-color: #c4ff42;
     border-top: 1px solid #B5CB54;
     border-right: 1px solid #B5CB54;
     border-bottom: 1px solid #B5CB54;
@@ -312,7 +312,7 @@
     background-image: url("/static/images/backend\ development\ image.png");
   }
 
-  /* Skills background on hoover end */
+  
 
 
   @media (max-width: 1024px) {
@@ -346,3 +346,95 @@
       height: 50px;
     }
   }
+
+/* Skills background on hoover end */
+
+  .experience {
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding-top: 225px;
+  }
+
+  .experience h1 {
+    font-size: 64px;
+  }
+
+  .Left-ex {
+    flex: 1;
+    max-width: 40%;
+
+  }
+
+
+  .Left-ex p {
+    font-size: 16px;
+    line-height: 38px;
+    padding-top: 133px;
+    padding-bottom: 130px;
+
+  }
+
+  .exbtn{
+    background-color: #c4ff42;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .Right-ex {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+  }
+  
+  .Job-role {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .job-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .job-text p {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .job-company {
+    font-size: 24px;
+    white-space: nowrap;
+    margin-top: 8px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #181616;
+  }
+  
+
+  .mywork {
+    height: 100vh;
+    background-color: #000;
+  }
+
+
+  /* blog start */
+
+
+.my
+  
+
+  /* blog end */
