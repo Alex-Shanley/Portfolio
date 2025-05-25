@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+/* hero section start  */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;   
+    overflow: hidden;
+  }
+  
+  .hero-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: contain;   
+    z-index: 0;
+  }
+  
+
+  .hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
+  
+  .hero-content  {
+    display: flex;
+    font-size: 24px;
+    font-weight: 300;
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+  }
+/* hero section end  */
+
+/* Skills Section Grid start  */
+
+.My-skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px; 
+  
+  position: relative;
+}
+
+/* Skills Section Grid end  */
+
+
+/* Skills individual box start  */
+
+.skillbox {
+    position: relative;
+    background-color: #D2F153;
+    border-top: 1px solid #B5CB54;
+    border-right: 1px solid #B5CB54;
+    border-bottom: 1px solid #B5CB54;
+    padding: 80px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 450px;
+}
+
+/* Skills individual box end  */
+
+/* Skills icon start  */
+
+.skill-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+/* Skills icon end */
+
+/* Skills h2 start  */
+
+.skillbox h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Skills h2 end  */
+
+
+/* Skills P start  */
+
+.skillbox p {
+  font-size: 14px;
+  color: #555;
+  line-height: 28px;
+  margin-top: 15px;
+  max-width: 95%;
+}
+
+/* Skills P end  */
+
+
+/* Skills number start  */
+
+.number {
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+  font-size: 150px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.06);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Skills number end  */
+
+/* Skills:hover start  */
+
+.skillbox:hover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+
+  /* Skills:hover end */
+
+  /* Skills text color hoover start */
+
+  .skillbox:hover h2,
+  .skillbox:hover p,
+  .skillbox:hover .number {
+    color: #fff;
+  }
+  
+    /* Skills text color hoover end */
+
+
+  /* Skills icon color start */
+
+  .skillbox:hover .skill-icon img {
+    filter: brightness(0) invert(1);
+  }
+
+  /* Skills icon color end */
+
+
+  /* Skills background on hoover start */
+
+.skillbox:nth-child(1):hover {
+    background-image: url("/static/images/Graphic\ design\ image\ .png");
+  }
+
+  .skillbox:nth-child(2):hover {
+    background-image: url("/static/images/UX_UI\ image.png");
+  }
+
+  .skillbox:nth-child(3):hover {
+    background-image: url("/static/images/Frontend\ development.png");
+  }
+
+  .skillbox:nth-child(4):hover {
+    background-image: url("/static/images/backend\ development\ image.png");
+  }
+
+  /* Skills background on hoover end */
+
+
+  @media (max-width: 1024px) {
+    .My-skills {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .My-skills {
+      grid-template-columns: 1fr;
+    }
+  
+    .skillbox {
+      padding: 50px 40px; 
+      min-height: auto;
+    }
+  
+    .skillbox h2 {
+      font-size: 28px;
+    }
+  
+    .number {
+      font-size: 100px;
+      bottom: -10px;
+    }
+  
+    .skill-icon img {
+      width: 50px;
+      height: 50px;
+    }
+  }

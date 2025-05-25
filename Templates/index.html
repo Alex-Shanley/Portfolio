@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Gentleman offers luxury menswear, combining timeless elegance, bespoke tailoring, and sophisticated style for the modern man.">
+    <meta name="keywords" content="Luxury menswear, timeless elegance, bespoke tailoring, and sophisticated style for the modern gentleman.">
+    <meta name="author" content="Alex Shanley">
+
+    <link rel="icon" type="image/png" href="Images/Favicon_.png">  
+    <title>Portfolio</title>
+
+    <!--Css design file link-->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!--Css design file link-->
+
+    <section class="hero-section">
+
+        <video autoplay muted loop playsinline>
+            <source src="{{ url_for('static', filename='images/Hero video.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="overlay"></div>
+        
+
+
+        <div class="hero-content">
+            <p class="tagline">Hi, I’m Alex Shanley and I am a </p>
+            <h1>
+                <span class="creative">Creative</span>
+                <span class="asterisk">*</span>
+                <span class="developer">Developer</span>
+            </h1>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+     <!--My skills block start -->
+
+    <section class="My-skills">
+
+        <div class="skillbox">
+          <div class="skill-icon">
+            <img src="{{ url_for('static', filename='images/Graphic design icon.png') }}" alt="Graphic Design Icon" />
+          </div>
+          <h2>Graphic Design</h2>
+          <p>
+            I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation. 
+          </p>
+          <span class="number">01</span>
+        </div>
+      
+        <div class="skillbox">
+          <div class="skill-icon">
+            <img src="{{ url_for('static', filename='images/UX:UI Design icon.png') }}" alt="Graphic Design Icon" />
+          </div>
+          <h2>UX/UI Design</h2>
+          <p>
+            I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation. 
+          </p>
+          <span class="number">02</span>
+        </div>
+      
+        <div class="skillbox">
+          <div class="skill-icon">
+            <img src="{{ url_for('static', filename='images/Frontend developer icon.png') }}" alt="Graphic Design Icon" />
+          </div>
+          <h2>Frontend Developer</h2>
+          <p>
+            I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation. 
+          </p>
+          <span class="number">03</span>
+        </div>
+      
+        <div class="skillbox">
+          <div class="skill-icon">
+            <img src="{{ url_for('static', filename='images/Backend developer icon.png') }}" alt="Graphic Design Icon" />
+          </div>
+          <h2>Backend Developer</h2>
+          <p>
+            I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation. 
+          </p>
+          <span class="number">04</span>
+        </div>
+      
+      </section>
+      
+
+
+    </section>
+    
+   <!--My skills block end -->
+
+  </head>
+  <body>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+  </body>
+</html>
