@@ -8,21 +8,16 @@
     <meta name="author" content="Alex Shanley" />
     <link rel="icon" type="image/png" href="Images/Favicon_.png" />
     <title>Portfolio</title>
-    <!--Css design file link-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-    <!--Css design file link-->
   </head>
   <body>
 
-    <!--My experience start -->
     <section class="hero-section">
       <video autoplay muted loop playsinline>
         <source src="{{ url_for('static', filename='images/Hero video.mp4') }}" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
       <div class="overlay"></div>
-
       <div class="hero-content">
         <p class="tagline">Hi, I’m Alex Shanley and I am a </p>
         <h1>
@@ -34,9 +29,7 @@
         </h1>
       </div>
     </section>
-    <!--My experience end -->
 
-    <!--My skills block start -->
     <section class="My-skills">
       <div class="skillbox">
         <div class="skill-icon">
@@ -82,9 +75,7 @@
         <span class="number">04</span>
       </div>
     </section>
-    <!--My skills block end -->
 
-    <!--My experience block start -->
     <section class="experience">
       <div class="Left-ex">
         <h1>EXPERIENCE</h1>
@@ -123,10 +114,8 @@
         <hr />
       </div>
     </section>
-    <!--My experience block end -->
 
     <section class="mywork">
-
       <div class="work-header">
         <h1>MY WORK
           <img class="workarrow" src="{{ url_for('static', filename='images/my work arrow.png') }}" alt="my work arrow">
@@ -139,34 +128,38 @@
         </nav>
 
         <div class="my-work-grid">
-
-          <!--work one -->
-
           <div class="work-showcase" data-category="branding">
-            <img src="{{ url_for('static', filename='images/my work 1.png') }}" alt="my work arrow">
-            <h2>Oasis / <span>Backgrounds</span></h2>
-          </div>
-
-          <!--work one -->
-
-          <!--work two -->
-
-          <div class="work-showcase" data-category="branding">
-            <img src="{{ url_for('static', filename='images/my work 1.png') }}" alt="my work arrow">
-            <h2>Oasis / <span>Backgrounds</span></h2>
+            <img src="{{ url_for('static', filename='images/salesforce.png') }}" alt="salesforce">
+            <h2>Lumora / <span>App Development</span></h2>
           </div>
 
           <div class="work-showcase" data-category="branding">
-            <img src="{{ url_for('static', filename='images/my work 1.png') }}" alt="my work arrow">
-            <h2>Oasis / <span>Backgrounds</span></h2>
+            <img src="{{ url_for('static', filename='images/P23.png') }}" alt="P23 Computer">
+            <h2>P23 / <span>Web Development</span></h2>
+          </div>
+
+          <div class="work-showcase" data-category="branding">
+            <img src="{{ url_for('static', filename='images/brand.png') }}" alt="my work arrow">
+            <h2>ELOT / <span>Branding</span></h2>
+          </div>
+
+          <div class="work-showcase" data-category="branding">
+            <img src="{{ url_for('static', filename='images/brand.png') }}" alt="my work arrow">
+            <h2>ELOT / <span>Branding</span></h2>
           </div>
 
 
+          <div class="work-showcase" data-category="branding">
+            <img src="{{ url_for('static', filename='images/P23.png') }}" alt="P23 Computer">
+            <h2>P23 / <span>Web Development</span></h2>
+          </div>
+
+          <div class="work-showcase" data-category="branding">
+            <img src="{{ url_for('static', filename='images/brand.png') }}" alt="my work arrow">
+            <h2>ELOT / <span>Branding</span></h2>
+          </div>
         </div>
       </div>
-
-
-      
     </section>
 
     <section class="myblog">
@@ -181,7 +174,6 @@
       </div>
 
       <div class="blogposts">
-        <!-- Article 1 -->
         <article class="article">
           <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Graphic Design Icon" />
           <div class="postdetails">
@@ -191,7 +183,6 @@
           </div>
         </article>
 
-        <!-- Article 2 -->
         <article class="article">
           <img src="{{ url_for('static', filename='images/Blog image 2.png') }}" alt="Graphic Design Icon" />
           <div class="postdetails">
@@ -203,6 +194,7 @@
       </div>
     </section>
 
+    <div id="My-work-cursor"></div>
     <div id="Blog-cursor"></div>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>

@@ -425,29 +425,28 @@
     border-top: 1px solid #181616;
   }
   
-/* My work start  */
+/* My work start */
 
-  .mywork {
-    height: 100vh;
-    background-color: #000;
-    padding: 120px 10%;
-  }
+.mywork {
+  height: 100vh;
+  background-color: #000;
+  padding: 70px 10%;
+}
 
-  .work-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 2em;
-    color: #fff;
-    font-size: 48px;
-    
-  }
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+  color: #fff;
+  font-size: 48px;
+}
+
 .workarrow {
   width: 50px;
   height: 50px;
   margin-left: 10px;
-  
 }
 
 .work-nav a {
@@ -458,7 +457,6 @@
 
 .work-nav a:hover {
   color: #c4ff42;
-  
 }
 
 .work-nav a.active {
@@ -469,14 +467,13 @@
   line-height: 20px;
 }
 
-
 .my-work-grid {
-  display: flex;
-  flex-direction: row;
-  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
-  gap: 5rem;
-  padding-top: 80px;
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 2.5rem;      
+  column-gap: 4.5rem;
+  padding-top: 40px;
 }
 
 .work-showcase {
@@ -485,10 +482,11 @@
 }
 
 .work-showcase img {
-  width: 100%;
+  width: 500px;
   height: 350px;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease, outline 0.3s ease;
 }
 
 .work-showcase h2 {
@@ -497,7 +495,6 @@
   padding-top: 20px;
 }
 
-
 .work-showcase h2 span {
   font-size: 24px;
 }
@@ -505,10 +502,30 @@
 .work-showcase img:hover {
   outline: 6px solid #c4ff42;
   outline-offset: -4px;
-  transform: scale(103%);
+  transform: scale(1.03);
 }
 
   /* My work end  */
+
+    /* custom work cursor start */
+
+#My-work-cursor{
+  position: fixed;
+  pointer-events: none;
+  width: 150px;
+  height: 150px;
+  background: url('/static/images/View\ project.png') no-repeat center center;
+  background-size: contain;
+  transform: translate(-50%, -70%);
+  transition: opacity 0.2s ease;
+  opacity: 0;
+  z-index: 900;
+}
+
+.my-work-grid:hover {
+cursor:none;
+}
+  /* custom work cursor end */
 
   /* blog start */
 
