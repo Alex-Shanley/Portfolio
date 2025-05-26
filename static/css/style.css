@@ -441,6 +441,7 @@
     margin-bottom: 2em;
     color: #fff;
     font-size: 48px;
+    
   }
 .workarrow {
   width: 50px;
@@ -470,9 +471,12 @@
 
 
 .my-work-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-  gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  gap: 5rem;
+  padding-top: 80px;
+  
 }
 
 .work-showcase {
@@ -482,7 +486,26 @@
 
 .work-showcase img {
   width: 100%;
+  height: 350px;
+  object-fit: cover;
   display: block;
+}
+
+.work-showcase h2 {
+  font-size: 40px;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+
+.work-showcase h2 span {
+  font-size: 24px;
+}
+
+.work-showcase img:hover {
+  outline: 6px solid #c4ff42;
+  outline-offset: -4px;
+  transform: scale(103%);
 }
 
   /* My work end  */
