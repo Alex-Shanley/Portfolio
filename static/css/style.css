@@ -460,7 +460,6 @@
   
 }
 
-
 .work-nav a.active {
   color: #c4ff42;
   font-size: 28px;
@@ -470,6 +469,21 @@
 }
 
 
+.my-work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 2rem;
+}
+
+.work-showcase {
+  position: relative;
+  text-align: left;
+}
+
+.work-showcase img {
+  width: 100%;
+  display: block;
+}
 
   /* My work end  */
 
