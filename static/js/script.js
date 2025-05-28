@@ -42,3 +42,27 @@ document.addEventListener('DOMContentLoaded', () => {
       customCursor.style.top = e.clientY + 'px';
     });
   });
+
+  const navLinks = document.querySelector ('.work-nav a');
+  const workItems = document.querySelector ('.work-showcase');
+
+  navLinks.forEach(link =>
+    link.addEventListener('click', e =>{
+      e.preventDefault();
+      
+      navLinks.forEach(l => lclassList.remove('active'));
+      link.classList.add('active');
+
+      const category = link.textContent.trim();
+
+      workItems.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+
+        if (category === 'All Works') {
+          item.style.display = 'block';
+        } else if (category == 'Development') {
+          if ()
+        }
+      })
+    })
+  )

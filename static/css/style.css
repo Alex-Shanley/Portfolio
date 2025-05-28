@@ -348,89 +348,148 @@
   }
 
 /* Skills background on hoover end */
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 225px 5vw 80px 5vw;
+  gap: 60px;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.experience h1 {
+  font-size: 4rem;
+}
+
+/* Left */
+.Left-ex {
+  flex: 1;
+  max-width: 40%;
+}
+
+.Left-ex p {
+  font-size: 1rem;
+  line-height: 2.3rem;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Button */
+.exbtn {
+  background-color: #c4ff42;
+  border: none;
+  padding: 20px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Right */
+.Right-ex {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}
+
+.Job-role {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.job-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.job-text p {
+  font-size: 1.25rem;
+  padding: 20px 0 50px 0;
+}
+
+.job-company {
+  font-size: 1.25rem;
+  white-space: nowrap;
+  margin-top: 8px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #181616;
+}
+
+
+@media (max-width: 1024px) {
 
   .experience {
-    height: 80vh;
-    display: flex;
-    justify-content: space-between;
-    padding: 80px 10%;
-    gap: 60px;
-    flex-wrap: wrap;
-    padding-top: 225px;
+    flex-direction: column;
+    padding: 150px 5vw 60px;
+  }
+
+  .Left-ex,
+  .Right-ex {
+    max-width: 100%;
+    width: 100%;
   }
 
   .experience h1 {
-    font-size: 64px;
+    font-size: 3rem;
+    text-align: center;
   }
-
-  .Left-ex {
-    flex: 1;
-    max-width: 40%;
-
-  }
-
 
   .Left-ex p {
-    font-size: 16px;
-    line-height: 38px;
-    padding-top: 133px;
-    padding-bottom: 130px;
-
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
-  .exbtn{
-    background-color: #c4ff42;
-    border: #c4ff42;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    cursor: pointer;
-  }
-
-  .Right-ex {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 50%;
-  }
-  
-  .Job-role {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  
   .job-text h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin: 0;
+    font-size: 1.5rem;
   }
-  
-  .job-text p {
-    font-size: 24px;
-    padding-top: 20px;
-    padding-bottom: 50px;
-  }
-  
+
+  .job-text p,
   .job-company {
-    font-size: 24px;
-    white-space: nowrap;
-    margin-top: 8px;
+    font-size: 1rem;
   }
-  
-  hr {
-    border: none;
-    border-top: 1px solid #181616;
+}
+
+
+@media (max-width: 768px) {
+
+  .experience {
+    padding: 100px 5vw 40px;
+    gap: 30px;
   }
-  
+
+  .experience h1 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .Left-ex p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+  }
+
+  .Job-role {
+    flex-direction: column;
+  }
+
+  .job-text p {
+    padding-bottom: 30px;
+  }
+}
 /* My work start */
 
 .mywork {
-  height: 100vh;
   background-color: #000;
-  padding: 70px 10%;
+  padding: 70px 5vw;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .work-header {
@@ -438,9 +497,16 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   color: #fff;
-  font-size: 48px;
+  font-size: 3rem;
+}
+
+/* Nav styling */
+.work-nav a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 3rem;
 }
 
 .workarrow {
@@ -449,61 +515,123 @@
   margin-left: 10px;
 }
 
-.work-nav a {
-  color: #fff;
-  font-size: 28px;
-  margin-left: 70px;
-}
-
-.work-nav a:hover {
-  color: #c4ff42;
-}
-
+.work-nav a:hover,
 .work-nav a.active {
   color: #c4ff42;
-  font-size: 28px;
-  margin-left: 40px;
   text-decoration: underline;
-  line-height: 20px;
 }
 
+/* Grid setup */
 .my-work-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  row-gap: 2.5rem;      
-  column-gap: 4.5rem;
-  padding-top: 40px;
-}
-
-.work-showcase {
-  position: relative;
-  text-align: left;
+  gap: 2.5rem 4.5rem;
+  padding-top: 60px;
 }
 
 .work-showcase img {
-  width: 500px;
-  height: 350px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/10;
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease, outline 0.3s ease;
 }
 
 .work-showcase h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 300;
   padding-top: 20px;
 }
 
 .work-showcase h2 span {
-  font-size: 24px;
+  font-size: 1.25rem;
 }
 
+/* Hover */
 .work-showcase img:hover {
   outline: 6px solid #c4ff42;
   outline-offset: -4px;
   transform: scale(1.03);
 }
+
+@media (max-width: 1024px) {
+  .my-work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .work-header {
+    font-size: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .work-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .work-nav a {
+    margin-left: 0;
+  }
+
+  .work-showcase h2 {
+    font-size: 1.5rem;
+  }
+
+  .work-showcase h2 span {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .my-work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-header {
+    font-size: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .work-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .work-nav a {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .work-showcase h2 {
+    font-size: 1.5rem;
+  }
+
+  .workarrow {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+  }
+
+  .work-showcase h2 span {
+    font-size: 1rem;
+  }
+}
+
+
+
 
   /* My work end  */
 
