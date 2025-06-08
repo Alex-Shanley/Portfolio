@@ -16,7 +16,6 @@
 .about-us h1 {
     font-size: 4rem;
     font-weight: 800;
-    
     margin-bottom: 1rem;
   }
   
@@ -153,5 +152,89 @@
     height: 100%;
     object-fit: cover;
     z-index: -2; 
+  }
+  
+
+
+  @media (max-width: 1024px) {
+    .about-us {
+      flex-direction: column;
+      align-items: center;
+      padding: 150px 5vw 60px 5vw;
+    }
+  
+    .about-left {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .about-image {
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
+    }
+  
+    .quote-text {
+      font-size: 40px;
+    }
+  
+    .quote-overlay {
+      top: auto;
+      bottom: 0;
+      left: 10px;
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-us h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-left p {
+      font-size: 0.95rem;
+      line-height: 1.8rem;
+      padding-bottom: 40px;
+    }
+  
+    .quote-text {
+      font-size: 32px;
+      padding: 0 10px;
+    }
+  
+    .quote-icon {
+      width: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-us {
+      padding: 100px 4vw 40px 4vw;
+      gap: 30px;
+    }
+  
+    .about-left {
+      max-width: 100%;
+    }
+  
+    .about-us h1 {
+      font-size: 2rem;
+    }
+  
+    .line {
+      width: 60%;
+    }
+  
+    .quote-text {
+      font-size: 24px;
+    }
+  
+    .quote {
+      padding: 40px 10px;
+    }
+  
+    .fixed-section {
+      height: 50vh;
+    }
   }
   
