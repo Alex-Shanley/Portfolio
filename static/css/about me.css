@@ -22,20 +22,24 @@
   @media (max-width: 768px) {
     .template-section-content h1 .about {
       font-size: 50px;
+      margin-bottom: 100px;
     }
     .template-section-content .templatearrow {
       width: 30px;
       height: 30px;
+      margin-bottom: 100px;
     }
   }
   
   @media (max-width: 480px) {
     .template-section-content h1 .about {
       font-size: 50px;
+      margin-bottom: 100px;
     }
     .template-section-content .templatearrow {
       width: 30px;
       height: 30px;
+      margin-bottom: 100px;
     }
   }
   
