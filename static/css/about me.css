@@ -20,24 +20,41 @@
   
   
   @media (max-width: 768px) {
+    .template-section-content h1 {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
     .template-section-content h1 .about {
       font-size: 30px;
+      text-align: center;
     }
-    .templatearrow {
+  
+    .template-section-content .templatearrow {
       width: 30px;
       height: 30px;
+      margin: 0 auto;
     }
   }
   
   @media (max-width: 480px) {
-    .template-section-content h1 .about {
-      font-size: 30px;
+    .template-section-content h1 {
+      flex-direction: column;
+      gap: 8px;
     }
-    .templatearrow {
-      width: 30px;
-      height: 30px;
+  
+    .template-section-content h1 .about {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .template-section-content .templatearrow {
+      width: 24px;
+      height: 24px;
+      margin: 0 auto;
     }
   }
+  
   
 
 .about-us h1 {
