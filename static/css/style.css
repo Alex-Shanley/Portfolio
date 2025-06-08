@@ -852,7 +852,6 @@ cursor:none;
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
-  
   color: #000000;
   font-size: 72px;
 }
@@ -892,12 +891,18 @@ cursor:none;
 }
 
 @media (max-width: 768px) {
+  .gallery-header{
+font-size: 50px;
+  }
   .gallery-item {
     width: 100%; 
   }
 }
 
 @media (max-width: 480px) {
+  .gallery-header{
+    font-size: 50px;
+      }
   .gallery-item {
     width: 100%; 
   }
