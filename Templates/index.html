@@ -1,276 +1,215 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The Gentleman offers luxury menswear, combining timeless elegance, bespoke tailoring, and sophisticated style for the modern man." />
-    <meta name="keywords" content="Luxury menswear, timeless elegance, bespoke tailoring, and sophisticated style for the modern gentleman." />
-    <meta name="author" content="Alex Shanley" />
-    <link rel="icon" type="image/png" href="Images/Favicon_.png" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-  </head>
-  <body>
+{% extends "base.html" %}
 
-    {% extends "base.html" %}
+{% block content %}
 
+{% include 'nav.html' %}
 
-  
-    {% block content %}
+<section class="hero-section">
+  <video autoplay muted loop playsinline>
+    <source src="{{ url_for('static', filename='images/Hero video.mp4') }}" type="video/mp4" />
+  </video>
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <p class="tagline">Hi, I’m Alex Shanley and I am a </p>
+    <h1>
+      <span class="creative">Creative</span>
+      <span class="asterisk-developer-wrapper">
+        <span class="asterisk">*</span>
+        <span class="developer">Developer</span>
+      </span>
+    </h1>
+  </div>
+</section>
 
-    {% include 'nav.html'%}
-    
+<section class="My-skills">
+  <div class="skillbox">
+    <div class="skill-icon">
+      <img src="{{ url_for('static', filename='images/Graphic design icon.png') }}" alt="Graphic Design Icon" />
+    </div>
+    <h2>Graphic Design</h2>
+    <p>
+      I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation.
+    </p>
+    <span class="number">01</span>
+  </div>
 
+  <div class="skillbox">
+    <div class="skill-icon">
+      <img src="{{ url_for('static', filename='images/UX:UI Design icon.png') }}" alt="UX/UI Design Icon" />
+    </div>
+    <h2>UX/UI Design</h2>
+    <p>
+      I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation.
+    </p>
+    <span class="number">02</span>
+  </div>
 
+  <div class="skillbox">
+    <div class="skill-icon">
+      <img src="{{ url_for('static', filename='images/Frontend developer icon.png') }}" alt="Frontend Developer Icon" />
+    </div>
+    <h2>Frontend Developer</h2>
+    <p>
+      I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation.
+    </p>
+    <span class="number">03</span>
+  </div>
 
- 
+  <div class="skillbox">
+    <div class="skill-icon">
+      <img src="{{ url_for('static', filename='images/Backend developer icon.png') }}" alt="Backend Developer Icon" />
+    </div>
+    <h2>Backend Developer</h2>
+    <p>
+      I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation.
+    </p>
+    <span class="number">04</span>
+  </div>
+</section>
 
-    <section class="hero-section">
-      <video autoplay muted loop playsinline>
-        <source src="{{ url_for('static', filename='images/Hero video.mp4') }}" type="video/mp4" />
-        
-      </video>
-      <div class="overlay"></div>
-      <div class="hero-content">
-        <p class="tagline">Hi, I’m Alex Shanley and I am a </p>
-        <h1>
-          <span class="creative">Creative</span>
-          <span class="asterisk-developer-wrapper">
-            <span class="asterisk">*</span>
-            <span class="developer">Developer</span>
-          </span>
-        </h1>
+<section class="experience">
+  <div class="Left-ex">
+    <h1>EXPERIENCE</h1>
+    <p>
+      I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation. My journey has spanned across various creative industries—from developing digital solutions for intergenerational support, to designing emotional literacy tools for young boys, and leading animated short film projects.
+    </p>
+    <button class="exbtn">Contact me</button>
+  </div>
+
+  <div class="Right-ex">
+    <div class="Job-role">
+      <div class="job-text">
+        <h2>UX/UI Designer</h2>
+        <p>2022–present</p>
       </div>
-    </section>
+      <span class="job-company">Montrix Partners</span>
+    </div>
+    <hr />
 
-    <section class="My-skills">
-      <div class="skillbox">
-        <div class="skill-icon">
-          <img src="{{ url_for('static', filename='images/Graphic design icon.png') }}" alt="Graphic Design Icon" />
-        </div>
-        <h2>Graphic Design</h2>
-        <p>
-          I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation.
-        </p>
-        <span class="number">01</span>
+    <div class="Job-role">
+      <div class="job-text">
+        <h2>Creative Developer</h2>
+        <p>2020–2022</p>
       </div>
+      <span class="job-company">Driftline Studio</span>
+    </div>
+    <hr />
 
-      <div class="skillbox">
-        <div class="skill-icon">
-          <img src="{{ url_for('static', filename='images/UX:UI Design icon.png') }}" alt="Graphic Design Icon" />
-        </div>
-        <h2>UX/UI Design</h2>
-        <p>
-          I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation.
-        </p>
-        <span class="number">02</span>
+    <div class="Job-role">
+      <div class="job-text">
+        <h2>Graphic Designer</h2>
+        <p>2019–2020</p>
       </div>
+      <span class="job-company">Vintari & Co.</span>
+    </div>
+    <hr />
+  </div>
+</section>
 
-      <div class="skillbox">
-        <div class="skill-icon">
-          <img src="{{ url_for('static', filename='images/Frontend developer icon.png') }}" alt="Graphic Design Icon" />
-        </div>
-        <h2>Frontend Developer</h2>
-        <p>
-          I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation.
-        </p>
-        <span class="number">03</span>
+<section class="mywork">
+  <div class="work-header">
+    <h1>MY WORK
+      <img class="workarrow" src="{{ url_for('static', filename='images/my work arrow.png') }}" alt="my work arrow" />
+    </h1>
+    <nav class="work-nav">
+      <a href="#" class="active">All Works</a>
+      <a href="#">Branding</a>
+      <a href="#">Design</a>
+      <a href="#">Development</a>
+    </nav>
+  </div>
+
+  <div class="my-work-grid">
+    {% for item in items %}
+      <div class="work-showcase" data-category="{{ item.category }}">
+        <img src="{{ url_for('static', filename=item.img) }}" alt="{{ item.title }}" />
+        <h2>{{ item.title }} / <span>{{ item.category }}</span></h2>
       </div>
+    {% endfor %}
+  </div>
+</section>
 
-      <div class="skillbox">
-        <div class="skill-icon">
-          <img src="{{ url_for('static', filename='images/Backend developer icon.png') }}" alt="Graphic Design Icon" />
-        </div>
-        <h2>Backend Developer</h2>
-        <p>
-          I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation.
-        </p>
-        <span class="number">04</span>
+<section class="myblog">
+  <div class="blogheader">
+    <div class="logotitle">
+      <span class="logo-icon">*</span>
+      <h1>MY BLOG</h1>
+    </div>
+    <p class="blogtxt">
+      I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation.
+    </p>
+  </div>
+
+  <div class="blogposts">
+    <article class="article">
+      <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Blog Image" />
+      <div class="postdetails">
+        <span class="postdate">24 MAY 2025</span>
+        <h2>Code & Coffee: My Journey as a Developer</h2>
+        <p class="author">By Alex Shanley</p>
       </div>
-    </section>
+    </article>
 
-    <section class="experience">
-      <div class="Left-ex">
-        <h1>EXPERIENCE</h1>
-        <p>
-          I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation. My journey has spanned across various creative industries—from developing digital solutions for intergenerational support, to designing emotional literacy tools for young boys, and leading animated short film projects.
-        </p>
-        <button class="exbtn">Contact me</button>
+    <article class="article">
+      <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Blog Image" />
+      <div class="postdetails">
+        <span class="postdate">24 MAY 2025</span>
+        <h2>Code & Coffee: My Journey as a Developer</h2>
+        <p class="author">By Alex Shanley</p>
       </div>
+    </article>
+  </div>
+</section>
 
-      <div class="Right-ex">
-        <div class="Job-role">
-          <div class="job-text">
-            <h2>UX/UI Designer</h2>
-            <p>2022–present</p>
-          </div>
-          <span class="job-company">Montrix Partners</span>
-        </div>
-        <hr />
-
-        <div class="Job-role">
-          <div class="job-text">
-            <h2>Creative Developer</h2>
-            <p>2020–2022</p>
-          </div>
-          <span class="job-company">Driftline Studio</span>
-        </div>
-        <hr />
-
-        <div class="Job-role">
-          <div class="job-text">
-            <h2>Graphic Designer</h2>
-            <p>2019–2020</p>
-          </div>
-          <span class="job-company">Vintari & Co.</span>
-        </div>
-        <hr />
-      </div>
-    </section>
-
-    <section class="mywork">
-
-      <div class="work-header">
-        <h1>MY WORK
-          <img class="workarrow" src="{{ url_for('static', filename='images/my work arrow.png') }}" alt="my work arrow">
-        </h1>
-        <nav class="work-nav">
-          <a href="#" class="active">All Works</a>
-          <a href="#">Branding</a>
-          <a href="#">Design</a>
-          <a href="#">Development</a>
-        </nav>
-      
-        <div class="my-work-grid">
-          {% for item in items %}
-            <div class="work-showcase" data-category="{{ item.category }}">
-              <img src="{{ url_for('static', filename=item.img) }}" alt="{{ item.title }}">
-              <h2>{{ item.title }} / <span>{{ item.category }}</span></h2>
-            </div>
-          {% endfor %}
-        </div>
-
-       
-
-        </div>
-
-    </section>
-      
-
-
-    <section class="myblog">
-      <div class="blogheader">
-        <div class="logotitle">
-          <span class="logo-icon">*</span>
-          <h1>MY BLOG</h1>
-        </div>
-        <p class="blogtxt">
-          I am a passionate and multi-disciplinary Graphic Designer with a strong foundation in UX/UI design, animation, and content creation.
-        </p>
-      </div>
-
-      <div class="blogposts">
-        <article class="article">
-          <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Graphic Design Icon" />
-          <div class="postdetails">
-            <span class="postdate">24 MAY 2025</span>
-            <h2>Code & Coffee: My Journey as a Developer</h2>
-            <p class="author">By Alex Shanley</p>
-          </div>
-        </article>
-
-        <div class="blogposts">
-          <article class="article">
-            <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Graphic Design Icon" />
-            <div class="postdetails">
-              <span class="postdate">24 MAY 2025</span>
-              <h2>Code & Coffee: My Journey as a Developer</h2>
-              <p class="author">By Alex Shanley</p>
-            </div>
-          </article>
-
-      </div>
-    </section>
-
-
-
-
-
-<!-- Gallery Section Start -->
 <section class="Acgallery">
   <div class="container">
-    <!-- Gallery Filter -->
-    <h5 class="gallery-header">PHOTOGRAPHY <img class="workarrow" src="{{ url_for('static', filename='images/my work arrow.png') }}" alt="my work arrow"></h5> 
-      
-    
-    
+    <h5 class="gallery-header">PHOTOGRAPHY <img class="workarrow" src="{{ url_for('static', filename='images/my work arrow.png') }}" alt="my work arrow" /></h5>
 
-    <!-- Gallery Items -->
     <div class="row">
-      <!-- Gallery Item Start -->
       <div class="gallery-item Outdoors">
         <div class="gallery-item-inner">
-          <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Outdoors">
+          <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Outdoors" />
         </div>
       </div>
-      <!-- Gallery Item End -->
 
-      <!-- Gallery Item Start -->
       <div class="gallery-item Indoors">
         <div class="gallery-item-inner">
-          <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Indoors">
+          <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Indoors" />
         </div>
       </div>
-      <!-- Gallery Item End -->
 
-      <!-- Gallery Item Start -->
       <div class="gallery-item Indoors">
         <div class="gallery-item-inner">
-          <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Indoors">
+          <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Indoors" />
         </div>
       </div>
-      <!-- Gallery Item End -->
 
-      <!-- Gallery Item Start -->
       <div class="gallery-item Artists">
         <div class="gallery-item-inner">
-          <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Artists">
+          <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Artists" />
         </div>
       </div>
-      <!-- Gallery Item End -->
 
-      <!-- Gallery Item Start -->
       <div class="gallery-item Outdoors">
         <div class="gallery-item-inner">
-          <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Outdoors">
+          <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Outdoors" />
         </div>
       </div>
-      <!-- Gallery Item End -->
 
-      <!-- Gallery Item Start -->
       <div class="gallery-item Artists">
         <div class="gallery-item-inner">
-          <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Artists">
+          <img src="{{ url_for('static', filename='images/Blog image 1.png') }}" alt="Artists" />
         </div>
       </div>
-      <!-- Gallery Item End -->
     </div>
   </div>
 </section>
-  
-    
 
+{% include 'footer.html' %}
 
+<div id="My-work-cursor"></div>
+<div id="Blog-cursor"></div>
 
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
-    {% include 'footer.html'%}
-
-    
-    {% endblock %}
-
-    <div id="My-work-cursor"></div>
-    <div id="Blog-cursor"></div>
-
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-  </body>
-</html>
+{% endblock %}
