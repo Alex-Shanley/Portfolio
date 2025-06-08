@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Gentleman offers luxury menswear, combining timeless elegance, bespoke tailoring, and sophisticated style for the modern man." />
+    <meta name="keywords" content="Luxury menswear, timeless elegance, bespoke tailoring, and sophisticated style for the modern gentleman." />
+    <meta name="author" content="Alex Shanley" />
+    <link rel="icon" type="image/png" href="Images/Favicon_.png" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+
+
+    {% extends "base.html" %}
+
+
+  
+    {% block content %}
+
+    {% include 'nav.html'%}
+    
+      {% set video_path = 'images/Hero video.mp4' %}
+      {% set heading = 'MY PROJECTS' %}
+      {% set arrow_path = 'images/my work arrow.png' %}
+    
+      {% include 'hero_section.html' %}
+
+
+      <section class="mywork">
+
+        <div class="work-header">
+          <h1>MY WORK
+            <img class="workarrow" src="{{ url_for('static', filename='images/my work arrow.png') }}" alt="my work arrow">
+          </h1>
+          <nav class="work-nav">
+            <a href="#" class="active">All Works</a>
+            <a href="#">Branding</a>
+            <a href="#">Design</a>
+            <a href="#">Development</a>
+          </nav>
+        
+          <div class="my-work-grid">
+            {% for item in items %}
+              <div class="work-showcase" data-category="{{ item.category }}">
+                <img src="{{ url_for('static', filename=item.img) }}" alt="{{ item.title }}">
+                <h2>{{ item.title }} / <span>{{ item.category }}</span></h2>
+              </div>
+            {% endfor %}
+          </div>
+  
+         
+  
+          </div>
+  
+      </section>
+        
+      {% include 'footer.html'%}
+
+      {% endblock %}
+
+    <div id="My-work-cursor"></div>
+    <div id="Blog-cursor"></div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
+

@@ -43,26 +43,49 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const navLinks = document.querySelector ('.work-nav a');
-  const workItems = document.querySelector ('.work-showcase');
+  const navLinks = document.querySelectorAll('.work-nav a');
+const workItems = document.querySelectorAll('.work-showcase');
 
-  navLinks.forEach(link =>
-    link.addEventListener('click', e =>{
-      e.preventDefault();
-      
-      navLinks.forEach(l => lclassList.remove('active'));
-      link.classList.add('active');
+navLinks.forEach(link =>
+  link.addEventListener('click', e => {
+    e.preventDefault();
 
-      const category = link.textContent.trim();
+    
+    navLinks.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
 
-      workItems.forEach(item => {
-        const itemCategory = item.getAttribute('data-category');
+    const category = link.textContent.trim();
 
-        if (category === 'All Works') {
+    workItems.forEach(item => {
+      const itemCategory = item.getAttribute('data-category');
+
+      if (category === 'All Works') {
+        item.style.display = 'block';
+      } else if (category === 'Development') {
+        if (itemCategory === 'App Development' || itemCategory === 'Web Development') {
           item.style.display = 'block';
-        } else if (category == 'Development') {
-          if ()
+        } else {
+          item.style.display = 'none';
         }
-      })
-    })
-  )
+      } else if (category === 'Design') {
+        if (itemCategory === 'UX/UI Design') {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      } else {
+        if (itemCategory === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      }
+    });
+  })
+);
+
+
+
+
+
+

@@ -8,50 +8,115 @@
     <meta name="author" content="Alex Shanley" />
     <link rel="icon" type="image/png" href="Images/Favicon_.png" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   </head>
   <body>
 
 
+    {% extends "base.html" %}
 
-    <nav class="header">
-        <ul>
-          <li class="logo">
-            <a href="index.html">
-              <img src="Images/Nav logo.svg" class="logo-image" alt="The Gentleman Logo">
-            </a>
-          </li>
-          <li class="hideOnMobile"><a href="{{ url_for('index') }}">HOME</a></li>
-          <li class="hideOnMobile"><a href="{{ url_for('about') }}">ABOUT</a></li>
+
   
-          <li class="menu-button" onclick="showSidebar()">
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
+    {% block content %}
 
-    <section class="hero-section">
-      <video autoplay muted loop playsinline>
-        <source src="{{ url_for('static', filename='images/Hero video.mp4') }}" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div class="overlay"></div>
-      <div class="hero-content">
-        <p class="tagline">Hi, I’m Alex Shanley and I am a </p>
-        <h1>
-          <span class="creative">Creative</span>
-          <span class="asterisk-developer-wrapper">
-            <span class="asterisk">*</span>
-            <span class="developer">Developer</span>
-          </span>
-        </h1>
-      </div>
-    </section>
+    {% include 'nav.html'%}
+    
+      {% set video_path = 'images/Hero video.mp4' %}
+      {% set heading = 'ABOUT ME' %}
+      {% set arrow_path = 'images/my work arrow.png' %}
+    
+      {% include 'hero_section.html' %}
 
+
+   
+
+
+
+
+
+          
  
+
+
+          <section class="about-us">
+            <div class="about-left">
+
+              <div class="logotitle">
+                <span class="logo-icon">*</span>
+                <h1>ABOUT ME</h1>
+              </div>
+              
+              <p>
+                I've always had a deep love for music both the classics and the new. Growing up with a father in a band, I have vivid memories of him taking me to concerts across Ireland, and it was there that I truly fell in love with music in all its forms. As I got older, I knew I wanted to share that same passion with others. That's how Headline was born — a place where people can discover new jams and classic hits, all in one spot, just as I experienced it.
+                <br /><br />
+                Headline was my way of giving back to the world what music gave to me. It’s a platform where everyone can explore the sounds that have shaped my life whether it’s uncovering fresh tracks or revisiting timeless classics.
+              </p>
+              
+            </div>
+            <div class="about-right">
+              <img src="{{ url_for('static', filename='images/P23.png') }}" alt="About Us Image" class="about-image" />
+            </div>
+          </section>
+
+
+
+          <section class="quote">
+            <img class="quote-overlay" src="{{ url_for('static', filename='images/quaote image.png') }}" alt="quote image">
+
+            <div class="my-quote">
+              <img class="quote-icon" src="{{ url_for('static', filename='images/about q.png') }}"alt="Quote Icon">
+              <h1 class="quote-text">
+                "Headline was built by music lovers, for music lovers—our goal is to create a space where you can discover new jams, revisit classic hits, and always find the perfect sound to vibe with"
+              </h1>
+                </div>
+           
+          </section>
+        
+
+
+
+
+          <section class="fixed-section">
+            
+
+            
+              <img src="{{ url_for('static', filename='images/fixed image.jpg') }}"  />
+              
+                </div>
+           
+          </section>
+        
+
+
+
+
+
+
+
+          <section class="about-us">
+            <div class="about-right">
+              <img src="{{ url_for('static', filename='images/P23.png') }}" alt="About Us Image" class="about-image" />
+            </div>
+            <div class="about-left">
+          
+              <div class="logotitle">
+                <span class="logo-icon">*</span>
+                <h1>ABOUT ME</h1>
+              </div>
+          
+              <p>
+                I've always had a deep love for music both the classics and the new. Growing up with a father in a band, I have vivid memories of him taking me to concerts across Ireland, and it was there that I truly fell in love with music in all its forms. As I got older, I knew I wanted to share that same passion with others. That's how Headline was born — a place where people can discover new jams and classic hits, all in one spot, just as I experienced it.
+                <br /><br />
+                Headline was my way of giving back to the world what music gave to me. It’s a platform where everyone can explore the sounds that have shaped my life whether it’s uncovering fresh tracks or revisiting timeless classics.
+              </p>
+          
+            </div>
+          </section>
+          
+          
+          {% include 'footer.html'%}
+
+          {% endblock %}
 
     <div id="My-work-cursor"></div>
     <div id="Blog-cursor"></div>
