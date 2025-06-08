@@ -850,7 +850,6 @@ cursor:none;
   .template-section-content {
     display: flex;
     flex-direction: column;
-    
     text-align: center;
     position: relative;
     z-index: 2;
@@ -859,6 +858,28 @@ cursor:none;
   
   }
   
+  @media (max-width: 1024px) {
+    .blogheader { 
+      margin-top: 200px;
+    }
+  }  
+
+
+
+
+  .template-section-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    color: white;
+    margin-top: 400px;
+  
+  }
+
+
+
   .about {
     font-weight: 800;
     font-size: 70px;
