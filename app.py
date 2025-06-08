@@ -1,7 +1,8 @@
 from flask import Flask, render_template, url_for
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates', static_folder='static')
+
 
 work_items = [
     {'img': 'images/salesforce.png', 'title': 'Lumora', 'category': 'App Development'},
@@ -12,7 +13,15 @@ work_items = [
     {'img': 'images/web 3.png', 'title': 'Finovo', 'category': 'Web Development'},
 ]
 
+
 @app.route('/')
+def index():
+    import os
+    print("CWD:", os.getcwd())
+    print("Templates folder exists:", os.path.exists('templates'))
+    print("Templates content:", os.listdir('templates'))
+    return render_template('index.html', items=work_items)
+
 def index():
     return render_template('index.html', items=work_items)
 
