@@ -3,7 +3,6 @@ import os
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
-
 work_items = [
     {'img': 'images/salesforce.png', 'title': 'Lumora', 'category': 'App Development'},
     {'img': 'images/P23.png', 'title': 'P23', 'category': 'Web Development'},
@@ -13,16 +12,11 @@ work_items = [
     {'img': 'images/web 3.png', 'title': 'Finovo', 'category': 'Web Development'},
 ]
 
-
 @app.route('/')
 def index():
-    import os
     print("CWD:", os.getcwd())
     print("Templates folder exists:", os.path.exists('templates'))
-    print("Templates content:", os.listdir('templates'))
-    return render_template('index.html', items=work_items)
-
-def index():
+    print("Templates content:", os.listdir('templates') if os.path.exists('templates') else "No templates folder")
     return render_template('index.html', items=work_items)
 
 @app.route('/projects')
@@ -44,5 +38,3 @@ def contact():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 10000))
     app.run(host='0.0.0.0', port=port)
-
-
