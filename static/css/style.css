@@ -706,6 +706,37 @@ cursor:none;
   transform: translateY(25px);
 }
 
+@media (max-width: 768px) {
+  .logotitle {
+    font-size: 2rem;
+    gap: 8px;
+  }
+  
+  .logo-icon {
+    font-size: 2.4rem;
+  }
+
+  .blogtxt {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .myblog {
+    padding: 40px 4vw;
+  }
+
+  .logotitle {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .blogtxt {
+    font-size: 0.9rem;
+  }
+}
+
 .blogtxt{
   font-size: 16px;
   line-height: 34px;
