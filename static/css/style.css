@@ -706,36 +706,31 @@ cursor:none;
   transform: translateY(25px);
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
+  .blogheader {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
   .logotitle {
     font-size: 2rem;
-    gap: 8px;
+    justify-content: center;
   }
-  
+
   .logo-icon {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
 
   .blogtxt {
-    font-size: 1rem;
     max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 480px) {
-  .myblog {
-    padding: 40px 4vw;
-  }
-
-  .logotitle {
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .blogtxt {
-    font-size: 0.9rem;
-  }
-}
 
 .blogtxt{
   font-size: 16px;
