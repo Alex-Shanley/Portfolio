@@ -3,13 +3,14 @@ import os
 
 app = Flask(__name__)
 
+
 work_items = [
-    {'img': 'images/salesforce.png', 'title': 'Lumora', 'category': 'App Development'},
-    {'img': 'images/P23.png', 'title': 'P23', 'category': 'Web Development'},
-    {'img': 'images/brand.png', 'title': 'Lumora', 'category': 'Branding'},
-    {'img': 'images/ui ux design.png', 'title': 'Archlight', 'category': 'UX/UI Design'},
-    {'img': 'images/app 2.png', 'title': 'NexFund', 'category': 'App Development'},
-    {'img': 'images/web 3.png', 'title': 'Finovo', 'category': 'Web Development'},
+    {'img': url_for('static', filename='images/salesforce.png'), 'title': 'Lumora', 'category': 'App Development'},
+    {'img': url_for('static', filename='images/P23.png'), 'title': 'P23', 'category': 'Web Development'},
+    {'img': url_for('static', filename='images/brand.png'), 'title': 'Lumora', 'category': 'Branding'},
+    {'img': url_for('static', filename='images/ui ux design.png'), 'title': 'Archlight', 'category': 'UX/UI Design'},
+    {'img': url_for('static', filename='images/app 2.png'), 'title': 'NexFund', 'category': 'App Development'},
+    {'img': url_for('static', filename='images/web 3.png'), 'title': 'Finovo', 'category': 'Web Development'},
 ]
 
 @app.route('/')
