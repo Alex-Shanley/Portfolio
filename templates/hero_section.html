@@ -1,13 +1,12 @@
 <section class="template-section">
-    <video autoplay muted loop playsinline>
-      <source src="{{ url_for('static', filename=video_path) }}" type="video/mp4" />
-    </video>
-    <div class="overlay"></div>
-    <div class="template-section-content">
-      <h1>
-        <span class="about">{{ heading }}</span>
-        <img class="templatearrow" src="{{ url_for('static', filename=arrow_path) }}" alt="my work arrow">
-        </span>
-      </h1>
-    </div>
-  </section>
+  <video autoplay muted loop playsinline>
+    <source src="{{ url_for('static', filename=video_path) }}" type="video/mp4" />
+  </video>
+  <div class="overlay"></div>
+  <div class="template-section-content">
+    <h1 class="about-heading">
+      {{ heading }}
+    </h1>
+    <img class="templatearrow" src="{{ url_for('static', filename=arrow_path) }}" alt="my work arrow">
+  </div>
+</section>
