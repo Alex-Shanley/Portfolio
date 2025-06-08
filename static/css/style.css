@@ -712,6 +712,7 @@ cursor:none;
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .logotitle {
