@@ -325,6 +325,13 @@
   }
 
 
+      .skillbox:nth-child(6):hover {
+    background-image: url("/static/images/backend\ development\ animation.png");
+  }
+
+
+
+
 
   @media (max-width: 1024px) {
     .My-skills {
