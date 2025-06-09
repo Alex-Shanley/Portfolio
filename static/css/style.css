@@ -321,13 +321,11 @@
   }
 
     .skillbox:nth-child(5):hover {
-    background-image: url("/static/images/backend\ development\ animation.png");
+    background-image: url("/static/images/ animation.png");
   }
 
 
-      .skillbox:nth-child(6):hover {
-    background-image: url("/static/images/backend\ development\ animation.png");
-  }
+ 
 
 
 
