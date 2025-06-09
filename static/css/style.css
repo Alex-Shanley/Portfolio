@@ -321,8 +321,21 @@
   }
 
 .skillbox:nth-child(5):hover {
+  background-image: url('../images/animation.png');
+}
+
+.skillbox:nth-child(6):hover {
   background-image: url('../images/branding.png');
 }
+
+.skillbox:nth-child(7):hover {
+  background-image: url('../images/branding.png');
+}
+
+.skillbox:nth-child(8):hover {
+  background-image: url('../images/branding.png');
+}
+
 
 
  
