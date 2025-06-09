@@ -325,7 +325,7 @@
 }
 
 .skillbox:nth-child(6):hover {
-  background-image: url('../images/branding.png');
+  background-image: url('../images/product.png');
 }
 
 .skillbox:nth-child(7):hover {
@@ -333,7 +333,7 @@
 }
 
 .skillbox:nth-child(8):hover {
-  background-image: url('../images/branding.png');
+  background-image: url('../images/product\ man.png');
 }
 
 
