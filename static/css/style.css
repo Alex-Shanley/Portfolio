@@ -320,9 +320,9 @@
     background-image: url("/static/images/backend\ development\ image.png");
   }
 
-    .skillbox:nth-child(5):hover {
-    background-image: url("/static/images/ animation.png");
-  }
+.skillbox:nth-child(5):hover {
+  background-image: url("/static/images/backend_development_animation.png");
+}
 
 
  
