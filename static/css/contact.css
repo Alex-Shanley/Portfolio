@@ -88,9 +88,6 @@ textarea.form {
   transition: color 0.3s ease;
 }
 
-.contact-info a:hover {
-  color: #c4ff42;
-}
 
 .contact-info i {
   font-size: 3rem;
