@@ -9,6 +9,8 @@
 .contact-left {
   flex: 1;
   min-width: 300px;
+   font-size: 1rem;
+  line-height: 2.3rem;
 }
 
 .cs-form {
