@@ -1,8 +1,7 @@
-.about-wrapper {
+.about-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 4rem;
-  
+  gap: 12rem;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -17,7 +16,7 @@
   min-width: 400px;
   padding: 2rem;
   background-color: #fff;
-  border-radius: 1.25rem;
+  
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
@@ -37,28 +36,26 @@
   flex: 1;
   padding: 1rem 1.25rem;
   border: 1px solid #ccc;
-  border-radius: 0.75rem;
+  
   font-size: 1.1rem;
 }
 
 textarea.form {
-  min-height: 160px;
+  min-height: 350px;
   resize: vertical;
 }
 
 .cs-btn {
   align-self: flex-start;
   padding: 0.85rem 2rem;
-  background-color: #007bff;
-  color: white;
+  background-color: #c4ff42;
+  color: rgb(0, 0, 0);
   border: none;
-  border-radius: 0.75rem;
+  
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.cs-btn:hover {
-  background-color: #0056b3;
-}
+
