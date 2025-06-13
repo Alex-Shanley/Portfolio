@@ -6,6 +6,19 @@
   padding: 4rem 2rem;
 }
 
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 225px 5vw 80px 5vw;
+  gap: 60px;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  color: #000000;
+  align-items: center;
+}
+
+
 .contact-left {
   flex: 1;
   min-width: 300px;
