@@ -38,3 +38,8 @@ def contact():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 10000))
     app.run(host='0.0.0.0', port=port)
+
+
+class Config:
+    SECRET_KEY = os.environ.get('IcSyojLrsKISTs2QkwlsIevAUBY1CjXc')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('postgresql://adding_database_user:IcSyojLrsKISTs2QkwlsIevAUBY1CjXc@dpg-d1mmde63jp1c73ds6ntg-a.oregon-postgres.render.com/adding_database')
